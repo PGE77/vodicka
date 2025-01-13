@@ -197,7 +197,7 @@ ul {
 
 .link-href {
 
-  color:#cd8c66;
+  color:#cd8c66 !important;
 
 
 
@@ -207,7 +207,7 @@ ul {
 .link-href:hover,
 .link-href:focus {
 
-  color: white;
+  color: white !important;
 
 
 
