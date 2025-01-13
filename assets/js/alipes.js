@@ -312,6 +312,9 @@
     $(".scroll-to-target").on("click", function () {
       var target = $(this).attr("data-target");
       // animate
+      $(".scroll-to-target").removeClass("current");
+      $(this).addClass("current");
+
       $("html, body").animate({
           scrollTop: $(target).offset().top
         },
