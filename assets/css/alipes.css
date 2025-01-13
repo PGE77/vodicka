@@ -1833,7 +1833,7 @@ ul {
 
 .main-slider__overly {
   position: absolute;
-  top: 40px;
+  top: 0px;
   left: 0;
   right: 0;
   height: 420px;
