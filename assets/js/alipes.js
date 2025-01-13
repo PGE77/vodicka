@@ -312,8 +312,11 @@
     $(".scroll-to-target").on("click", function () {
       var target = $(this).attr("data-target");
       // animate
-      $(".scroll-to-target").removeClass("current");
-      $(this).addClass("current");
+         // Odstraň aktivní třídu `current` ze všech `<li>`
+         $(".main-menu__list li").removeClass("current");
+
+         // Najdi rodiče `<li>` a přidej mu třídu `current`
+         $(this).closest("li").addClass("current");
 
       $("html, body").animate({
           scrollTop: $(target).offset().top
