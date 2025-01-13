@@ -188,9 +188,28 @@ ul {
   z-index: -1;
 }
 
-.btn-padding{
-padding-left:40px !important;
-padding-right:40px !important;
+.btn-padding {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+
+
+}
+
+.link-href {
+
+  color: var(--alipes-base);
+
+
+
+
+}
+
+.link-href:hover,
+.link-href:focus {
+
+  color: white;
+
+
 
 
 }
@@ -2671,7 +2690,7 @@ padding-right:40px !important;
 }
 
 .counter-one__count-box h3 {
-  font-size: 30px;
+  font-size: 23px;
   font-weight: 500;
   line-height: 30px !important;
   font-family: var(--alipes-font-two) !important;
@@ -3276,7 +3295,7 @@ padding-right:40px !important;
 
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
   .floor-plan__tab-content-inner {
 
     flex-wrap: wrap;
