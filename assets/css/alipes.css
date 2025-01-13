@@ -3273,7 +3273,17 @@ padding-right:40px !important;
   display: flex;
   align-items: center;
   border: 1px solid var(--alipes-bdr-color);
-  flex-wrap: wrap;
+
+}
+
+@media screen and (max-width:768px){
+  .floor-plan__tab-content-inner {
+
+    flex-wrap: wrap;
+  }
+
+
+
 }
 
 .floor-plan__tab-content-left {
