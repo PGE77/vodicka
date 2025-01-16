@@ -619,7 +619,9 @@ background-color:black !important;
 .main-menu__wrapper {
   position: relative;
   display: block;
-  padding: 0 60px;
+  padding: 0 40px;
+  max-width: 1250px;
+  margin: 0px auto;
 }
 
 .main-menu__wrapper-inner {
@@ -2438,7 +2440,7 @@ background-color:black !important;
 .about-one {
   position: relative;
   display: block;
-  padding: 120px 0 120px;
+  padding: 120px 0 40px;
   z-index: 1;
 }
 
@@ -3507,7 +3509,7 @@ background-color:black !important;
   position: relative;
   display: block;
   background-color: var(--alipes-base);
-  padding: 170px 0 120px;
+  padding: 90px 0 200px;
   margin-top: -60px;
   overflow: hidden;
   z-index: 1;
@@ -4260,6 +4262,15 @@ background-color:black !important;
   position: relative;
   display: block;
   margin-left: -20px;
+  bottom: 70px;
+}
+@media screen and (max-width:1024px){
+
+  .contact-one__right {
+
+    bottom: 0px;
+  }
+
 }
 
 .contact-one__right .section-title__title {

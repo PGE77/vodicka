@@ -317,7 +317,7 @@
       $("html, body").animate({
           scrollTop: $(target).offset().top
         },
-        1000
+        100
       );
 
       return false;
@@ -471,6 +471,7 @@
     let navContent = document.querySelector(".main-menu").innerHTML;
     let mobileNavContainer = document.querySelector(".sticky-header__content");
     mobileNavContainer.innerHTML = navContent;
+
   }
 
   if ($(".mobile-nav__container .main-menu__list").length) {
@@ -802,6 +803,7 @@
     });
   }
 
+
   function SmoothMenuScroll() {
     var anchor = $(".scrollToLink");
     if (anchor.length) {
@@ -817,7 +819,7 @@
           .animate({
               scrollTop: $(target.attr("href")).offset().top - headerH + "px"
             },
-            1200,
+            100,
             "easeInOutExpo"
           );
         anchor.removeClass("current");
@@ -857,6 +859,37 @@
     }
   }
 
+
+  $(".anchor_link").on("click", function (e) {
+    e.preventDefault(); // Zastaví standardní akci odkazu
+
+    // Získání cílového data-tab z atributu odkazu
+    var targetTabId = $(this).data("target"); // Např. "#penthouse"
+
+    if (targetTabId) {
+      var targetTab = $(`li[data-tab='${targetTabId}']`);
+console.log(targetTab);
+      if (targetTab.length) {
+        // Odstraníme všechny aktivní stavy z ostatních záložek
+        $("li.tab-btn").removeClass("active-btn");
+
+        // Přidáme aktivní třídu požadované záložce
+        targetTab.addClass("active-btn");
+
+        // Zpracování obsahu, pokud používáte záložky s obsahem
+        $(".tabs-content .tab").removeClass("active-tab");
+        $(targetTabId).addClass("active-tab");
+
+        // Posuneme stránku k cílové záložce
+        $("html, body").animate(
+          {
+            scrollTop: targetTab.offset().top - 280, // Posunutí o hlavičku
+          },
+          100 // Doba posunutí
+        );
+      }
+    }
+  });
 
   // window load event
 
