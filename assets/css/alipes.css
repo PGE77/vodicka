@@ -219,6 +219,22 @@ background-color:black !important;
 
 }
 
+.bg-brown-custom{
+background-color: #1a150e;
+
+
+
+}
+.galerie-h2{
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 500;
+  margin-top: 5px;
+  text-transform: uppercase;
+
+
+}
+
 /*--------------------------------------------------------------
 # Custom Cursor
 --------------------------------------------------------------*/
